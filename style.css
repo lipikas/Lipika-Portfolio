@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: "DM Serif Display", "San Serif";
+}
+.app {
+  margin: 50px;
+  margin-bottom: 150px;
+}
+p {
+  font-family: Jost;
+}
+header {
+  display: flex;
+  gap: 20px;
+}
+.head {
+  font-size: 30px;
+  flex-grow: 1;
+}
+.grid {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 10px 17px;
+}
+a {
+  text-decoration: None;
+}
+.menu {
+  font-family: "Jost";
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.photo {
+  height: 450px;
+  width: 530px;
+}
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+  margin: 50px 370px 40px 315px;
+}
+.content img {
+  height: 150px;
+  width: 130px;
+}
+.me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 4px 0;
+  margin-left: -40px;
+}
+.me.h1 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.me.h2 {
+  font-family: Jost;
+  font-size: 20px;
+  margin: 0 50px;
+  color: #4d5053;
+  overflow: hidden;
+  width: 550px;
+  color: white;
+}
+.me.h2::after {
+  border-right: 4px solid orange;
+  content: "";
+  color: black;
+  white-space: nowrap;
+
+  animation: typing 6s steps(30, end) forwards infinite,
+    blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+/* The typing effect */
+@keyframes typing {
+  0% {
+    content: "I";
+  }
+  5% {
+    content: "I design";
+  }
+
+  10% {
+    content: "I design and code";
+  }
+  25% {
+    content: "I design and code beautifully simple things";
+  }
+
+  40% {
+    content: "I design and code beautifully simple things, and I love what I do.";
+  }
+
+  100% {
+    content: "I design and code beautifully simple things, and I love what I do.";
+  }
+}
+.AboutMe {
+  display: flex;
+  gap: 160px;
+  margin: 130px 250px;
+}
+.AboutMe div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+.img {
+  mix-blend-mode: darken;
+}
+
+.expertise {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.expertise.h1 {
+  font-size: 25px;
+}
+.expertise img {
+  width: 34px;
+  height: 22px;
+}
+.expertise.content {
+  gap: 150px;
+}
+/* .expertise.content {
+  flex-direction: row;
+  list-style: none;
+  gap: 50px;
+} */
+
+.skill1 {
+  box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1),
+    2px 0px 30px 1px rgba(0, 0, 0, 0.1), 0px 5px 0px 0px rgba(33, 97, 216, 0.73);
+}
+
+.skill2 {
+  box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1),
+    2px 0px 30px 1px rgba(0, 0, 0, 0.1), 0px 5px 0px 0px rgba(239, 7, 7, 0.73);
+}
+
+.skill {
+  box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1),
+    2px 0px 30px 1px rgba(0, 0, 0, 0.1), 0px 5px 0px 0px rgba(239, 235, 7, 0.73);
+}
+
+.companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+.aff {
+  width: 250px;
+  height: 130px;
+  margin-top: -30px;
+  margin-left: -50px;
+}
+
+.tesla {
+  width: 250px;
+  height: 190px;
+  margin-top: -10px;
+}
+
+.InterestingBlob {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 200px;
+  margin: 0px 250px;
+}
+
+.InterestingBlob img {
+  mix-blend-mode: darken;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.ContactMe p {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ContactMe div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.AboutMe h3,
+.AboutMe p {
+  animation: popUp 5s ease infinite;
+}
+
+/* Keyframes for the pop-up animation */
+@keyframes popUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(40px);
+    opacity: 0.4;
+  }
+  20% {
+    transform: translateY(20px);
+    opacity: 0.6;
+  }
+  30% {
+    transform: translateY(15px);
+    opacity: 0.9;
+  }
+  40% {
+    transform: translateY(5px);
+    opacity: 0.95;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 26px;
+}
+.body {
+  font-size: 20px;
+}
+.skill,
+.skill1,
+.skill2 {
+  text-align: center;
+  padding: 50px 60px;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill2 {
+  padding: 65px 60px;
+}
+.body {
+  margin-top: 20px;
+}
+.bodyp {
+  padding-top: 5px;
+}
+
+#projects {
+  background-color: black;
+  color: white;
+  font-family: Jost;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.projsummary {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5px;
+  row-gap: 20px;
+}
+
+.projsummary img {
+  width: 480px;
+  height: 300px;
+  border-radius: 20px;
+}
+.projsummary img:hover {
+  background-image: #d5deff;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  width: 480px;
+  height: 300px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img1 {
+  background-image: url(assets/projects/chatgpt.png);
+}
+.img2 {
+  background-image: url(assets/new_img/munch.png);
+}
+
+.img3 {
+  background-image: url(assets/new_img/pizza.png);
+}
+
+.img4 {
+  background-image: url(assets/new_img/1.png);
+  background-size: contain;
+}
+
+.img5 {
+  background-image: url(assets/new_img/ru.png);
+}
+
+.info {
+  margin: 20px 50px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 20px;
+}
+.info {
+  visibility: hidden;
+}
+.infobody {
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.infoskills {
+  font-weight: 300;
+}
+
+.img1:hover {
+  background-image: None;
+  background-color: #88a1f9;
+}
+.img1:hover .info {
+  visibility: visible;
+}
+
+.img2:hover {
+  background-image: None;
+  background-color: #88a1f9;
+}
+.img2:hover .info {
+  visibility: visible;
+}
+
+.img3:hover {
+  background-image: None;
+  background-color: #88a1f9;
+}
+.img3:hover .info {
+  visibility: visible;
+}
+
+.img4:hover {
+  background-image: None;
+  background-color: #88a1f9;
+}
+.img4:hover .info {
+  visibility: visible;
+}
+
+.img5:hover {
+  background-image: None;
+  background-color: #88a1f9;
+}
+.img5:hover .info {
+  visibility: visible;
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.email {
+  width: 28px;
+  height: 28px;
+}
