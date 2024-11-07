@@ -223,27 +223,27 @@ a {
   justify-content: center;
   gap: 20px;
 }
-.AboutMe h3,
+/* .AboutMe h3,
 .AboutMe p {
   animation: popUp 5s ease infinite;
-}
+} */
 
 /* Keyframes for the pop-up animation */
 @keyframes popUp {
   0% {
-    transform: translateY(50px);
+    transform: translateY(100px);
     opacity: 0;
   }
   10% {
-    transform: translateY(40px);
+    transform: translateY(80px);
     opacity: 0.4;
   }
   20% {
-    transform: translateY(20px);
+    transform: translateY(60px);
     opacity: 0.6;
   }
   30% {
-    transform: translateY(15px);
+    transform: translateY(40px);
     opacity: 0.9;
   }
   40% {
@@ -303,6 +303,8 @@ a {
   grid-template-columns: 1fr 1fr;
   column-gap: 2.5px;
   row-gap: 20px;
+
+  font-size: 18px;
 }
 
 .projsummary img {
